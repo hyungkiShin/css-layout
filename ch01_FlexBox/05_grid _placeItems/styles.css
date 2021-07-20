@@ -2,28 +2,23 @@
   display: grid;
   gap: 10px;
   height: 50vh;
-  grid-template:
-    "header header header header" 1fr
-    "content content content nav" 2fr
-    "footer footer footer footer" 1fr / 1fr 1fr 1fr 1fr; 
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  justify-items: stretch;
 }
 
 .header {
   background-color: #2ecc71;
-  grid-area: header;
 }
 
 .content {
   background-color: peru;
-  grid-area: content;
 }
 
 .nav {
   background-color: rgb(38, 121, 121);
-  grid-area: nav;
 }
 
 .footer {
   background-color: rgb(243, 188, 105);
-  grid-area: footer;
 }
