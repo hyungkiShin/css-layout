@@ -9,6 +9,9 @@
 
 .header {
   background-color: #2ecc71;
+  /* align-self: end;
+  justify-self: center; */
+  place-self: end center;
 }
 
 .content {
